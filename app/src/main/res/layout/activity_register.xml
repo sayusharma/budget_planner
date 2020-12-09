@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#DCD6D6"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:text="BUDGET PLANNER"
+        android:textColor="@color/black"
+       android:id="@+id/budget"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_below="@id/budget"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:id="@+id/vci"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_below="@id/vci"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="Please register with us to continue"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:textColorHint="#777373"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#777373"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#777373"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="match_parent"
+            android:text="REGISTER NOW"
+            android:textColor="@color/white"
+            android:onClick="onClickRegisterNow"
+            android:background="#C6A62E"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
